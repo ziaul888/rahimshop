@@ -1,0 +1,16 @@
+{
+  "product":
+    [
+      {"id":"Grocery","Product_name":"Health","price":"$300.00","expiry":"7/27/2020"},
+      {"id":"Shoes","Product_name":"Home","price":"$200.00","expiry":"6/17/2020"},
+      {"id":"Sports","Product_name":"Beauty","price":"$100.00","expiry":"1/16/2021"},
+      {"id":"Music","Product_name":"Music","price":"$150.00","expiry":"5/3/2020"},
+      {"id":"Beauty","Product_name":"Sports","price":"$400.00","expiry":"2/25/2020"},
+      {"id":"Computers","Product_name":"Health","price":"$430.00","expiry":"2/27/2020"},
+      {"id":"Home","Product_name":"Music","price":"$360.00","expiry":"12/24/2020"},
+      {"id":"Shoes","Product_name":"Kids","price":"$390.00","expiry":"4/27/2020"},
+      {"id":"Toys","Product_name":"Kids","price":"$120.00","expiry":"3/2/2020"},
+      {"id":"Kids","Product_name":"Beauty","price":"$240.00","expiry":"12/1/2020"}
+    ]
+  }
+  
