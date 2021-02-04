@@ -14,12 +14,10 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
-              <Link className="btn btn-outline-light mr-5" to="/users/add">
-                CreateProducts
-              </Link>
-            </li>
           </ul>
+          <Link className="btn btn-outline-light mr-5" to="/product/create">
+            CreateProducts
+          </Link>
         </div>
       </div>
     </nav>

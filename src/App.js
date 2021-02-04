@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Compoents/pages/Home";
+import { CreateProducts } from "./Compoents/pages/products/CreateProducts";
+import { EditProduct } from "./Compoents/pages/products/EditProduct";
 
 function App() {
   return (
@@ -12,7 +14,17 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" component={Home}></Route>
+          <Route exact path="/" component={Home}></Route>
+          <Route
+            exact
+            path="/product/create"
+            component={CreateProducts}
+          ></Route>
+          <Route
+            exact
+            path="/product/editproduct"
+            component={EditProduct}
+          ></Route>
         </Switch>
       </Router>
     </div>

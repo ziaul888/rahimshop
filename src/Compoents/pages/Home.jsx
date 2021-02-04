@@ -1,5 +1,8 @@
-import React, { useState, useEffect, Button } from "react";
+import React, { useState, useEffect } from "react";
+
 import axios from "axios";
+import { Link } from "react-router-dom";
+import { CustomInput, Label } from "reactstrap";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -15,6 +18,10 @@ const Home = () => {
 
   return (
     <div className="container">
+      <Label for="exampleCustomRange" className="mt-5">
+        Price
+      </Label>
+      <CustomInput type="range" id="exampleCustomRange" name="customRange" />
       <div className="py-4">
         <table class="table border shadow">
           <thead className="thead-dark">
@@ -23,6 +30,7 @@ const Home = () => {
               <th scope="col">Product_Name</th>
               <th scope="col">Price</th>
               <th scope="col">Expiry</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -32,6 +40,12 @@ const Home = () => {
                 <td>{product.Product_name}</td>
                 <td>{product.price}</td>
                 <td>{product.expiry}</td>
+                <td>
+                  <Link className="btn btn-primary" to="/product/editproduct">
+                    Edit
+                  </Link>
+                  <Link className="btn btn-danger">Delete</Link>
+                </td>
               </tr>
             ))}
           </tbody>
