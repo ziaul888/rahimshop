@@ -22,7 +22,7 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/product/editproduct"
+            path="/product/editproduct:id"
             component={EditProduct}
           ></Route>
         </Switch>

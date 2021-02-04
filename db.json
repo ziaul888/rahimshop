@@ -1,30 +1,6 @@
 {
   "product": [
     {
-      "id": 1,
-      "Product_name": "Health",
-      "price": "$300.00",
-      "expiry": "7/27/2020"
-    },
-    {
-      "id": 2,
-      "Product_name": "Home",
-      "price": "$200.00",
-      "expiry": "6/17/2020"
-    },
-    {
-      "id": 3,
-      "Product_name": "Beauty",
-      "price": "$100.00",
-      "expiry": "1/16/2021"
-    },
-    {
-      "id": 4,
-      "Product_name": "Music",
-      "price": "$150.00",
-      "expiry": "5/3/2020"
-    },
-    {
       "id": 5,
       "Product_name": "Sports",
       "price": "$400.00",
@@ -59,32 +35,6 @@
       "Product_name": "Beauty",
       "price": "$240.00",
       "expiry": "12/1/2020"
-    },
-    {
-      "product_name": "adsdc",
-      "price": "120",
-      "expiry": "",
-      "date": "1222-02-05",
-      "id": 11
-    },
-    {
-      "product_name": "food",
-      "price": "130",
-      "expiry": "",
-      "date": "2021-02-05",
-      "id": 12
-    },
-    {
-      "product_name": "food",
-      "price": "128",
-      "expiry": "2021-01-01",
-      "id": 13
-    },
-    {
-      "productname": "vegetable",
-      "price": "300",
-      "expiry": "2021-02-01",
-      "id": 14
     }
   ]
 }

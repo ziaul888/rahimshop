@@ -16,6 +16,10 @@ const Home = () => {
     setProducts(result.data);
   };
 
+  const handleDelete = async (id) => {
+    await axios.delete(`http://localhost:3003/product/${id}`);
+    loadProducts();
+  };
   return (
     <div className="container">
       <Label for="exampleCustomRange" className="mt-5">
@@ -41,10 +45,18 @@ const Home = () => {
                 <td>{product.price}</td>
                 <td>{product.expiry}</td>
                 <td>
-                  <Link className="btn btn-primary" to="/product/editproduct">
+                  <Link
+                    className="btn btn-primary"
+                    to={`/product/editproduct/${product.id}`}
+                  >
                     Edit
                   </Link>
-                  <Link className="btn btn-danger">Delete</Link>
+                  <Link
+                    className="btn btn-danger"
+                    onClick={() => handleDelete(product.id)}
+                  >
+                    Delete
+                  </Link>
                 </td>
               </tr>
             ))}
