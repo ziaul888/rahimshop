@@ -17,14 +17,10 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route
             exact
-            path="/product/create"
+            path="/products/create"
             component={CreateProducts}
           ></Route>
-          <Route
-            exact
-            path="/product/editproduct:id"
-            component={EditProduct}
-          ></Route>
+          <Route path="/products/editproduct" component={EditProduct}></Route>
         </Switch>
       </Router>
     </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <Link className="btn btn-outline-light mr-5" to="/product/create">
+          <Link className="btn btn-outline-light mr-5" to="/products/create">
             CreateProducts
           </Link>
         </div>

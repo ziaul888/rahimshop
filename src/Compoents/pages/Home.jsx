@@ -47,7 +47,7 @@ const Home = () => {
                 <td>
                   <Link
                     className="btn btn-primary"
-                    to={`/product/editproduct/${product.id}`}
+                    to={`/products/editproduct/${product.id}`}
                   >
                     Edit
                   </Link>
